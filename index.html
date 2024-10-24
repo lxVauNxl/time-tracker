@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Time Tracking System</h1>
+
+        <!-- Employee Login -->
+        <div class="login-section">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" placeholder="Enter Employee ID">
+            <button id="loginBtn">Login</button>
+        </div>
+
+        <!-- Time Tracking -->
+        <div id="trackingSection" class="tracking-section hidden">
+            <h2>Welcome, <span id="empName"></span></h2>
+            <button id="startBtn">Start Work</button>
+            <button id="endBtn" class="hidden">End Work</button>
+        </div>
+
+        <!-- Display Records -->
+        <div class="records-section">
+            <h3>Attendance Records</h3>
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Date</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Records will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
